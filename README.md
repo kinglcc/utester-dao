@@ -5,3 +5,8 @@
 ```
 mvn clean install
 ```
+
+# package
+```
+mvn package
+```
