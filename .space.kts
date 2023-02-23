@@ -12,4 +12,14 @@ job("Build and run tests") {
             """
         }
     }
+
+    sequential {
+    	container(displayName = "Prepare test data", image = "gradle:6.1.1-jre11") {
+        	shellScript {
+            	content = """
+             		echo "Hello world!"
+            	"""
+            }
+        }
+    }
 }
